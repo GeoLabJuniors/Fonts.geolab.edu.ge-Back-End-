@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FontsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CreateDateRange">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreateDateRange1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Fonts" Relationship="Self.FK_Font_CreateDateRange" FromRole="CreateDateRange" ToRole="Font" />
+  </EntityType>
+  <EntityType Name="Designer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DesignerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Font_Design" Relationship="Self.FK_Font_Design_Designer" FromRole="Designer" ToRole="Font_Design" />
+  </EntityType>
+  <EntityType Name="Engineer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EngineerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EngineerPhoto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ext" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Font_Engineer" Relationship="Self.FK_Font_Engineer_Engineer" FromRole="Engineer" ToRole="Font_Engineer" />
+  </EntityType>
+  <EntityType Name="Font">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FontNamePre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FontName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FontTypeID" Type="Int32" Nullable="false" />
+    <Property Name="CreateDateRangeID" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DigitizationDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CreateDateRange" Relationship="Self.FK_Font_CreateDateRange" FromRole="Font" ToRole="CreateDateRange" />
+    <NavigationProperty Name="Font_Design" Relationship="Self.FK_Font_Design_Font" FromRole="Font" ToRole="Font_Design" />
+    <NavigationProperty Name="Font_Engineer" Relationship="Self.FK_Font_Engineer_Font" FromRole="Font" ToRole="Font_Engineer" />
+    <NavigationProperty Name="FontType" Relationship="Self.FK_Font_FontType" FromRole="Font" ToRole="FontType" />
+    <NavigationProperty Name="Font_Mentor" Relationship="Self.FK_Font_Mentor_Font" FromRole="Font" ToRole="Font_Mentor" />
+    <NavigationProperty Name="Font_Writing" Relationship="Self.FK_Font_Writing_Font" FromRole="Font" ToRole="Font_Writing" />
+  </EntityType>
+  <EntityType Name="Font_Design">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FontID" Type="Int32" Nullable="false" />
+    <Property Name="DesignerID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Designer" Relationship="Self.FK_Font_Design_Designer" FromRole="Font_Design" ToRole="Designer" />
+    <NavigationProperty Name="Font" Relationship="Self.FK_Font_Design_Font" FromRole="Font_Design" ToRole="Font" />
+  </EntityType>
+  <EntityType Name="Font_Engineer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FontID" Type="Int32" Nullable="false" />
+    <Property Name="EngineerID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Engineer" Relationship="Self.FK_Font_Engineer_Engineer" FromRole="Font_Engineer" ToRole="Engineer" />
+    <NavigationProperty Name="Font" Relationship="Self.FK_Font_Engineer_Font" FromRole="Font_Engineer" ToRole="Font" />
+  </EntityType>
+  <EntityType Name="Font_Mentor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FontID" Type="Int32" Nullable="false" />
+    <Property Name="MentorID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Font" Relationship="Self.FK_Font_Mentor_Font" FromRole="Font_Mentor" ToRole="Font" />
+    <NavigationProperty Name="Mentor" Relationship="Self.FK_Font_Mentor_Mentor" FromRole="Font_Mentor" ToRole="Mentor" />
+  </EntityType>
+  <EntityType Name="Font_Writing">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FontID" Type="Int32" Nullable="false" />
+    <Property Name="WritingID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Font" Relationship="Self.FK_Font_Writing_Font" FromRole="Font_Writing" ToRole="Font" />
+    <NavigationProperty Name="Writing" Relationship="Self.FK_Font_Writing_Writing" FromRole="Font_Writing" ToRole="Writing" />
+  </EntityType>
+  <EntityType Name="FontType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FontType1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Fonts" Relationship="Self.FK_Font_FontType" FromRole="FontType" ToRole="Font" />
+  </EntityType>
+  <EntityType Name="Mentor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MentorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MentorPhoto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Font_Mentor" Relationship="Self.FK_Font_Mentor_Mentor" FromRole="Mentor" ToRole="Font_Mentor" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Writing">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Writing1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Font_Writing" Relationship="Self.FK_Font_Writing_Writing" FromRole="Writing" ToRole="Font_Writing" />
+  </EntityType>
+  <Association Name="FK_Font_CreateDateRange">
+    <End Role="CreateDateRange" Type="Self.CreateDateRange" Multiplicity="1" />
+    <End Role="Font" Type="Self.Font" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CreateDateRange">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font">
+        <PropertyRef Name="CreateDateRangeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Design_Designer">
+    <End Role="Designer" Type="Self.Designer" Multiplicity="1" />
+    <End Role="Font_Design" Type="Self.Font_Design" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Design">
+        <PropertyRef Name="DesignerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Engineer_Engineer">
+    <End Role="Engineer" Type="Self.Engineer" Multiplicity="1" />
+    <End Role="Font_Engineer" Type="Self.Font_Engineer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Engineer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Engineer">
+        <PropertyRef Name="EngineerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Design_Font">
+    <End Role="Font" Type="Self.Font" Multiplicity="1" />
+    <End Role="Font_Design" Type="Self.Font_Design" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Font">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Design">
+        <PropertyRef Name="FontID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Engineer_Font">
+    <End Role="Font" Type="Self.Font" Multiplicity="1" />
+    <End Role="Font_Engineer" Type="Self.Font_Engineer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Font">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Engineer">
+        <PropertyRef Name="FontID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_FontType">
+    <End Role="FontType" Type="Self.FontType" Multiplicity="1" />
+    <End Role="Font" Type="Self.Font" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FontType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font">
+        <PropertyRef Name="FontTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Mentor_Font">
+    <End Role="Font" Type="Self.Font" Multiplicity="1" />
+    <End Role="Font_Mentor" Type="Self.Font_Mentor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Font">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Mentor">
+        <PropertyRef Name="FontID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Writing_Font">
+    <End Role="Font" Type="Self.Font" Multiplicity="1" />
+    <End Role="Font_Writing" Type="Self.Font_Writing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Font">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Writing">
+        <PropertyRef Name="FontID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Mentor_Mentor">
+    <End Role="Mentor" Type="Self.Mentor" Multiplicity="1" />
+    <End Role="Font_Mentor" Type="Self.Font_Mentor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mentor">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Mentor">
+        <PropertyRef Name="MentorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Writing_Writing">
+    <End Role="Writing" Type="Self.Writing" Multiplicity="1" />
+    <End Role="Font_Writing" Type="Self.Font_Writing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Writing">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Writing">
+        <PropertyRef Name="WritingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FontsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CreateDateRanges" EntityType="Self.CreateDateRange" />
+    <EntitySet Name="Designers" EntityType="Self.Designer" />
+    <EntitySet Name="Engineers" EntityType="Self.Engineer" />
+    <EntitySet Name="Fonts" EntityType="Self.Font" />
+    <EntitySet Name="Font_Design" EntityType="Self.Font_Design" />
+    <EntitySet Name="Font_Engineer" EntityType="Self.Font_Engineer" />
+    <EntitySet Name="Font_Mentor" EntityType="Self.Font_Mentor" />
+    <EntitySet Name="Font_Writing" EntityType="Self.Font_Writing" />
+    <EntitySet Name="FontTypes" EntityType="Self.FontType" />
+    <EntitySet Name="Mentors" EntityType="Self.Mentor" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Writings" EntityType="Self.Writing" />
+    <AssociationSet Name="FK_Font_CreateDateRange" Association="Self.FK_Font_CreateDateRange">
+      <End Role="CreateDateRange" EntitySet="CreateDateRanges" />
+      <End Role="Font" EntitySet="Fonts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Design_Designer" Association="Self.FK_Font_Design_Designer">
+      <End Role="Designer" EntitySet="Designers" />
+      <End Role="Font_Design" EntitySet="Font_Design" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Engineer_Engineer" Association="Self.FK_Font_Engineer_Engineer">
+      <End Role="Engineer" EntitySet="Engineers" />
+      <End Role="Font_Engineer" EntitySet="Font_Engineer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Design_Font" Association="Self.FK_Font_Design_Font">
+      <End Role="Font" EntitySet="Fonts" />
+      <End Role="Font_Design" EntitySet="Font_Design" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Engineer_Font" Association="Self.FK_Font_Engineer_Font">
+      <End Role="Font" EntitySet="Fonts" />
+      <End Role="Font_Engineer" EntitySet="Font_Engineer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_FontType" Association="Self.FK_Font_FontType">
+      <End Role="FontType" EntitySet="FontTypes" />
+      <End Role="Font" EntitySet="Fonts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Mentor_Font" Association="Self.FK_Font_Mentor_Font">
+      <End Role="Font" EntitySet="Fonts" />
+      <End Role="Font_Mentor" EntitySet="Font_Mentor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Writing_Font" Association="Self.FK_Font_Writing_Font">
+      <End Role="Font" EntitySet="Fonts" />
+      <End Role="Font_Writing" EntitySet="Font_Writing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Mentor_Mentor" Association="Self.FK_Font_Mentor_Mentor">
+      <End Role="Mentor" EntitySet="Mentors" />
+      <End Role="Font_Mentor" EntitySet="Font_Mentor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Writing_Writing" Association="Self.FK_Font_Writing_Writing">
+      <End Role="Writing" EntitySet="Writings" />
+      <End Role="Font_Writing" EntitySet="Font_Writing" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

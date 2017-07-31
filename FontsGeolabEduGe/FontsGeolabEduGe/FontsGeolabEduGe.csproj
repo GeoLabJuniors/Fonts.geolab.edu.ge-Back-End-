@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7A70D0D-1B54-40E5-B0B1-81C5F3CD3573}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FontsGeolabEduGe</RootNamespace>
+    <AssemblyName>FontsGeolabEduGe</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\tether\tether-theme-arrows-dark.css" />
+    <Content Include="Content\tether\tether-theme-arrows-dark.min.css" />
+    <Content Include="Content\tether\tether-theme-arrows.css" />
+    <Content Include="Content\tether\tether-theme-arrows.min.css" />
+    <Content Include="Content\tether\tether-theme-basic.css" />
+    <Content Include="Content\tether\tether-theme-basic.min.css" />
+    <Content Include="Content\tether\tether.css" />
+    <Content Include="Content\tether\tether.min.css" />
+    <Content Include="fonts\BPGNinoMtavruli-Bold.svg" />
+    <Content Include="fonts\BPGNinoMtavruli.svg" />
+    <Content Include="fonts\codropsicons\codropsicons.svg" />
+    <Content Include="fonts\codropsicons\license.txt" />
+    <Content Include="fonts\DejaVuSans-Bold.svg" />
+    <Content Include="fonts\DejaVuSans.svg" />
+    <Content Include="fonts\font.css" />
+    <Content Include="fonts\GLAkademiuri-Regular.svg" />
+    <Content Include="fonts\GLChonchkhi-Book.svg" />
+    <Content Include="fonts\GLChonchkhi-Light.svg" />
+    <Content Include="fonts\GLChonchkhi-Regular.svg" />
+    <Content Include="fonts\GLEreklesStamba-Regular.svg" />
+    <Content Include="fonts\GLGiorgiNikoladze-Regular.svg" />
+    <Content Include="fonts\GLGordeziani-Bold.svg" />
+    <Content Include="fonts\GLGordeziani-Light.svg" />
+    <Content Include="fonts\GLGordeziani-Medium.svg" />
+    <Content Include="fonts\GLGordeziani-Regular.svg" />
+    <Content Include="fonts\GLGordeziani-UltraLight.svg" />
+    <Content Include="fonts\GLItaliuri-Regular.svg" />
+    <Content Include="fonts\GLKirovi-Bold.svg" />
+    <Content Include="fonts\GLKupiura-Bold.svg" />
+    <Content Include="fonts\GLKupiura-Light.svg" />
+    <Content Include="fonts\GLKupiura-Medium.svg" />
+    <Content Include="fonts\GLKupiura-Regular.svg" />
+    <Content Include="fonts\GLKupiura-UltraLight.svg" />
+    <Content Include="fonts\GLLortkipanidze-Bold.svg" />
+    <Content Include="fonts\GLLortkipanidze-Regular.svg" />
+    <Content Include="fonts\GLMkafio-Book.svg" />
+    <Content Include="fonts\GLMkafio-ExtraLight.svg" />
+    <Content Include="fonts\GLMkafio-Light.svg" />
+    <Content Include="fonts\GLMkafio-Regular.svg" />
+    <Content Include="fonts\GLMkafio-Thin.svg" />
+    <Content Include="fonts\GLMkafio-UltraLight.svg" />
+    <Content Include="fonts\GLMoskovis-Regular.svg" />
+    <Content Include="fonts\GLParizuli-Bold.svg" />
+    <Content Include="fonts\GLParizuli-Medium.svg" />
+    <Content Include="fonts\GLParizuli-Regular.svg" />
+    <Content Include="fonts\GLSaeklesio-Regular.svg" />
+    <Content Include="fonts\GLSatitulo-Regular.svg" />
+    <Content Include="fonts\GLTatishvili12-Normal.svg" />
+    <Content Include="fonts\GLTatishviliMetal-Bold.svg" />
+    <Content Include="fonts\GLUniversiteti-Regular.svg" />
+    <Content Include="fonts\GLVenuri-Bold.svg" />
+    <Content Include="fonts\GLVenuri-Book.svg" />
+    <Content Include="fonts\GLVenuri-ExtraLight.svg" />
+    <Content Include="fonts\GLVenuri-Heavy.svg" />
+    <Content Include="fonts\GLVenuri-Light.svg" />
+    <Content Include="fonts\GLVenuri-Medium.svg" />
+    <Content Include="fonts\GLVenuri-Regular.svg" />
+    <Content Include="fonts\GLVenuri-Thin.svg" />
+    <Content Include="fonts\icomoon\icomoon.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\dots.png" />
+    <Content Include="Images\download-grey.png" />
+    <Content Include="Images\download-white.png" />
+    <Content Include="Images\EngineerImages\A_Charkviani.png" />
+    <Content Include="Images\letter-min.png" />
+    <Content Include="Images\letter.png" />
+    <Content Include="Images\logo-ico.ico" />
+    <Content Include="Images\logo-png.png" />
+    <Content Include="Images\logo-svg.svg" />
+    <Content Include="Images\MentorImages\A_Razmadze.png" />
+    <Content Include="Images\MentorImages\A_Sukiasovi.png" />
+    <Content Include="Images\MentorImages\B_Gugushvili.png" />
+    <Content Include="Images\MentorImages\L_Giorgadze.png" />
+    <Content Include="Images\MentorImages\M_Getsadze.png" />
+    <Content Include="Images\type-min.png" />
+    <Content Include="Images\typewriter.png" />
+    <Content Include="Js\classie.js" />
+    <Content Include="Js\script.js" />
+    <Content Include="Js\selectFx.js" />
+    <Content Include="fonts\BPGNinoMtavruli-Bold.ttf" />
+    <Content Include="fonts\BPGNinoMtavruli-Bold.woff" />
+    <Content Include="fonts\BPGNinoMtavruli.ttf" />
+    <Content Include="fonts\BPGNinoMtavruli.woff" />
+    <Content Include="fonts\bpg_nino_mtavruli_bold.eot" />
+    <Content Include="fonts\bpg_nino_mtavruli_bold.woff2" />
+    <Content Include="fonts\bpg_nino_mtavruli_normal.eot" />
+    <Content Include="fonts\bpg_nino_mtavruli_normal.woff2" />
+    <Content Include="fonts\codropsicons\codropsicons.eot" />
+    <Content Include="fonts\codropsicons\codropsicons.ttf" />
+    <Content Include="fonts\codropsicons\codropsicons.woff" />
+    <Content Include="fonts\dejavu-sans-bold.eot" />
+    <Content Include="fonts\dejavu-sans-bold.woff2" />
+    <Content Include="fonts\DejaVuSans-Bold.ttf" />
+    <Content Include="fonts\DejaVuSans-Bold.woff" />
+    <Content Include="fonts\DejaVuSans.eot" />
+    <Content Include="fonts\DejaVuSans.ttf" />
+    <Content Include="fonts\DejaVuSans.woff" />
+    <Content Include="fonts\DejaVuSans.woff2" />
+    <Content Include="fonts\icomoon\icomoon.eot" />
+    <Content Include="fonts\icomoon\icomoon.ttf" />
+    <Content Include="fonts\icomoon\icomoon.woff" />
+    <Content Include="fonts\NotoSans.eot" />
+    <Content Include="fonts\NotoSans.ttf" />
+    <Content Include="fonts\NotoSans.woff" />
+    <Content Include="fonts\NotoSans.woff2" />
+    <Content Include="fonts\NotoSansGeorgian-Bold.eot" />
+    <Content Include="fonts\NotoSansGeorgian-Bold.ttf" />
+    <Content Include="fonts\NotoSansGeorgian-Bold.woff" />
+    <Content Include="fonts\NotoSansGeorgian-Bold.woff2" />
+    <Content Include="fonts\NotoSansGeorgian-Regular.eot" />
+    <Content Include="fonts\NotoSansGeorgian-Regular.ttf" />
+    <Content Include="fonts\NotoSansGeorgian-Regular.woff" />
+    <Content Include="fonts\NotoSansGeorgian-Regular.woff2" />
+    <Content Include="fonts\NotoSansUI-Bold.eot" />
+    <Content Include="fonts\NotoSansUI-Bold.ttf" />
+    <Content Include="fonts\NotoSansUI-Bold.woff" />
+    <Content Include="fonts\NotoSansUI-Bold.woff2" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="font_download\Akademiuri.rar" />
+    <Content Include="font_download\Dumbadze.rar" />
+    <Content Include="font_download\EreklesStamba.rar" />
+    <Content Include="font_download\GiorgiNikoladze.rar" />
+    <Content Include="font_download\Gordeziani.rar" />
+    <Content Include="font_download\Italiuri.rar" />
+    <Content Include="font_download\Kirovi.rar" />
+    <Content Include="font_download\Kupiura.rar" />
+    <Content Include="font_download\Lortkipanidze.rar" />
+    <Content Include="font_download\Mkafio.rar" />
+    <Content Include="font_download\Moskovis.rar" />
+    <Content Include="font_download\Parizuli.rar" />
+    <Content Include="font_download\Saeklesio.rar" />
+    <Content Include="font_download\Satitulo.rar" />
+    <Content Include="font_download\Tatishvili_12.rar" />
+    <Content Include="font_download\Tatishvili_Chonchkhi.rar" />
+    <Content Include="font_download\Tatishvili_Metal.rar" />
+    <Content Include="font_download\Universiteti.rar" />
+    <Content Include="font_download\Venuri.rar" />
+    <Content Include="fonts\GLAkademiuri-Regular.eot" />
+    <Content Include="fonts\GLAkademiuri-Regular.ttf" />
+    <Content Include="fonts\GLAkademiuri-Regular.woff" />
+    <Content Include="fonts\GLAkademiuri-Regular.woff2" />
+    <Content Include="fonts\GLChonchkhi-Book.eot" />
+    <Content Include="fonts\GLChonchkhi-Book.ttf" />
+    <Content Include="fonts\GLChonchkhi-Book.woff" />
+    <Content Include="fonts\GLChonchkhi-Book.woff2" />
+    <Content Include="fonts\GLChonchkhi-Light.eot" />
+    <Content Include="fonts\GLChonchkhi-Light.ttf" />
+    <Content Include="fonts\GLChonchkhi-Light.woff" />
+    <Content Include="fonts\GLChonchkhi-Light.woff2" />
+    <Content Include="fonts\GLChonchkhi-Regular.eot" />
+    <Content Include="fonts\GLChonchkhi-Regular.ttf" />
+    <Content Include="fonts\GLChonchkhi-Regular.woff" />
+    <Content Include="fonts\GLChonchkhi-Regular.woff2" />
+    <Content Include="fonts\GLEreklesStamba-Regular.eot" />
+    <Content Include="fonts\GLEreklesStamba-Regular.ttf" />
+    <Content Include="fonts\GLEreklesStamba-Regular.woff" />
+    <Content Include="fonts\GLEreklesStamba-Regular.woff2" />
+    <Content Include="fonts\GLGiorgiNikoladze-Regular.eot" />
+    <Content Include="fonts\GLGiorgiNikoladze-Regular.ttf" />
+    <Content Include="fonts\GLGiorgiNikoladze-Regular.woff" />
+    <Content Include="fonts\GLGiorgiNikoladze-Regular.woff2" />
+    <Content Include="fonts\GLGordeziani-Bold.eot" />
+    <Content Include="fonts\GLGordeziani-Bold.ttf" />
+    <Content Include="fonts\GLGordeziani-Bold.woff" />
+    <Content Include="fonts\GLGordeziani-Bold.woff2" />
+    <Content Include="fonts\GLGordeziani-Light.eot" />
+    <Content Include="fonts\GLGordeziani-Light.ttf" />
+    <Content Include="fonts\GLGordeziani-Light.woff" />
+    <Content Include="fonts\GLGordeziani-Light.woff2" />
+    <Content Include="fonts\GLGordeziani-Medium.eot" />
+    <Content Include="fonts\GLGordeziani-Medium.ttf" />
+    <Content Include="fonts\GLGordeziani-Medium.woff" />
+    <Content Include="fonts\GLGordeziani-Medium.woff2" />
+    <Content Include="fonts\GLGordeziani-Regular.eot" />
+    <Content Include="fonts\GLGordeziani-Regular.ttf" />
+    <Content Include="fonts\GLGordeziani-Regular.woff" />
+    <Content Include="fonts\GLGordeziani-Regular.woff2" />
+    <Content Include="fonts\GLGordeziani-UltraLight.eot" />
+    <Content Include="fonts\GLGordeziani-UltraLight.ttf" />
+    <Content Include="fonts\GLGordeziani-UltraLight.woff" />
+    <Content Include="fonts\GLGordeziani-UltraLight.woff2" />
+    <Content Include="fonts\GLItaliuri-Regular.eot" />
+    <Content Include="fonts\GLItaliuri-Regular.ttf" />
+    <Content Include="fonts\GLItaliuri-Regular.woff" />
+    <Content Include="fonts\GLItaliuri-Regular.woff2" />
+    <Content Include="fonts\GLKirovi-Bold.eot" />
+    <Content Include="fonts\GLKirovi-Bold.ttf" />
+    <Content Include="fonts\GLKirovi-Bold.woff" />
+    <Content Include="fonts\GLKirovi-Bold.woff2" />
+    <Content Include="fonts\GLKupiura-Bold.eot" />
+    <Content Include="fonts\GLKupiura-Bold.ttf" />
+    <Content Include="fonts\GLKupiura-Bold.woff" />
+    <Content Include="fonts\GLKupiura-Bold.woff2" />
+    <Content Include="fonts\GLKupiura-Light.eot" />
+    <Content Include="fonts\GLKupiura-Light.ttf" />
+    <Content Include="fonts\GLKupiura-Light.woff" />
+    <Content Include="fonts\GLKupiura-Light.woff2" />
+    <Content Include="fonts\GLKupiura-Medium.eot" />
+    <Content Include="fonts\GLKupiura-Medium.ttf" />
+    <Content Include="fonts\GLKupiura-Medium.woff" />
+    <Content Include="fonts\GLKupiura-Medium.woff2" />
+    <Content Include="fonts\GLKupiura-Regular.eot" />
+    <Content Include="fonts\GLKupiura-Regular.ttf" />
+    <Content Include="fonts\GLKupiura-Regular.woff" />
+    <Content Include="fonts\GLKupiura-Regular.woff2" />
+    <Content Include="fonts\GLKupiura-UltraLight.eot" />
+    <Content Include="fonts\GLKupiura-UltraLight.ttf" />
+    <Content Include="fonts\GLKupiura-UltraLight.woff" />
+    <Content Include="fonts\GLKupiura-UltraLight.woff2" />
+    <Content Include="fonts\GLLortkipanidze-Bold.eot" />
+    <Content Include="fonts\GLLortkipanidze-Bold.ttf" />
+    <Content Include="fonts\GLLortkipanidze-Bold.woff" />
+    <Content Include="fonts\GLLortkipanidze-Bold.woff2" />
+    <Content Include="fonts\GLLortkipanidze-Regular.eot" />
+    <Content Include="fonts\GLLortkipanidze-Regular.ttf" />
+    <Content Include="fonts\GLLortkipanidze-Regular.woff" />
+    <Content Include="fonts\GLLortkipanidze-Regular.woff2" />
+    <Content Include="fonts\GLMkafio-Book.eot" />
+    <Content Include="fonts\GLMkafio-Book.ttf" />
+    <Content Include="fonts\GLMkafio-Book.woff" />
+    <Content Include="fonts\GLMkafio-Book.woff2" />
+    <Content Include="fonts\GLMkafio-ExtraLight.eot" />
+    <Content Include="fonts\GLMkafio-ExtraLight.ttf" />
+    <Content Include="fonts\GLMkafio-ExtraLight.woff" />
+    <Content Include="fonts\GLMkafio-ExtraLight.woff2" />
+    <Content Include="fonts\GLMkafio-Light.eot" />
+    <Content Include="fonts\GLMkafio-Light.ttf" />
+    <Content Include="fonts\GLMkafio-Light.woff" />
+    <Content Include="fonts\GLMkafio-Light.woff2" />
+    <Content Include="fonts\GLMkafio-Regular.eot" />
+    <Content Include="fonts\GLMkafio-Regular.ttf" />
+    <Content Include="fonts\GLMkafio-Regular.woff" />
+    <Content Include="fonts\GLMkafio-Regular.woff2" />
+    <Content Include="fonts\GLMkafio-Thin.eot" />
+    <Content Include="fonts\GLMkafio-Thin.ttf" />
+    <Content Include="fonts\GLMkafio-Thin.woff" />
+    <Content Include="fonts\GLMkafio-Thin.woff2" />
+    <Content Include="fonts\GLMkafio-UltraLight.eot" />
+    <Content Include="fonts\GLMkafio-UltraLight.ttf" />
+    <Content Include="fonts\GLMkafio-UltraLight.woff" />
+    <Content Include="fonts\GLMkafio-UltraLight.woff2" />
+    <Content Include="fonts\GLMoskovis-Regular.eot" />
+    <Content Include="fonts\GLMoskovis-Regular.ttf" />
+    <Content Include="fonts\GLMoskovis-Regular.woff" />
+    <Content Include="fonts\GLMoskovis-Regular.woff2" />
+    <Content Include="fonts\GLParizuli-Bold.eot" />
+    <Content Include="fonts\GLParizuli-Bold.ttf" />
+    <Content Include="fonts\GLParizuli-Bold.woff" />
+    <Content Include="fonts\GLParizuli-Bold.woff2" />
+    <Content Include="fonts\GLParizuli-Medium.eot" />
+    <Content Include="fonts\GLParizuli-Medium.ttf" />
+    <Content Include="fonts\GLParizuli-Medium.woff" />
+    <Content Include="fonts\GLParizuli-Medium.woff2" />
+    <Content Include="fonts\GLParizuli-Regular.eot" />
+    <Content Include="fonts\GLParizuli-Regular.ttf" />
+    <Content Include="fonts\GLParizuli-Regular.woff" />
+    <Content Include="fonts\GLParizuli-Regular.woff2" />
+    <Content Include="fonts\GLSaeklesio-Regular.eot" />
+    <Content Include="fonts\GLSaeklesio-Regular.ttf" />
+    <Content Include="fonts\GLSaeklesio-Regular.woff" />
+    <Content Include="fonts\GLSaeklesio-Regular.woff2" />
+    <Content Include="fonts\GLSatitulo-Regular.eot" />
+    <Content Include="fonts\GLSatitulo-Regular.ttf" />
+    <Content Include="fonts\GLSatitulo-Regular.woff" />
+    <Content Include="fonts\GLSatitulo-Regular.woff2" />
+    <Content Include="fonts\GLTatishvili12-Normal.eot" />
+    <Content Include="fonts\GLTatishvili12-Normal.ttf" />
+    <Content Include="fonts\GLTatishvili12-Normal.woff" />
+    <Content Include="fonts\GLTatishvili12-Normal.woff2" />
+    <Content Include="fonts\GLTatishviliMetal-Bold.eot" />
+    <Content Include="fonts\GLTatishviliMetal-Bold.ttf" />
+    <Content Include="fonts\GLTatishviliMetal-Bold.woff" />
+    <Content Include="fonts\GLTatishviliMetal-Bold.woff2" />
+    <Content Include="fonts\GLUniversiteti-Regular.eot" />
+    <Content Include="fonts\GLUniversiteti-Regular.ttf" />
+    <Content Include="fonts\GLUniversiteti-Regular.woff" />
+    <Content Include="fonts\GLUniversiteti-Regular.woff2" />
+    <Content Include="fonts\GLVenuri-Bold.eot" />
+    <Content Include="fonts\GLVenuri-Bold.ttf" />
+    <Content Include="fonts\GLVenuri-Bold.woff" />
+    <Content Include="fonts\GLVenuri-Bold.woff2" />
+    <Content Include="fonts\GLVenuri-Book.eot" />
+    <Content Include="fonts\GLVenuri-Book.ttf" />
+    <Content Include="fonts\GLVenuri-Book.woff" />
+    <Content Include="fonts\GLVenuri-Book.woff2" />
+    <Content Include="fonts\GLVenuri-ExtraLight.eot" />
+    <Content Include="fonts\GLVenuri-ExtraLight.ttf" />
+    <Content Include="fonts\GLVenuri-ExtraLight.woff" />
+    <Content Include="fonts\GLVenuri-ExtraLight.woff2" />
+    <Content Include="fonts\GLVenuri-Heavy.eot" />
+    <Content Include="fonts\GLVenuri-Heavy.ttf" />
+    <Content Include="fonts\GLVenuri-Heavy.woff" />
+    <Content Include="fonts\GLVenuri-Heavy.woff2" />
+    <Content Include="fonts\GLVenuri-Light.eot" />
+    <Content Include="fonts\GLVenuri-Light.ttf" />
+    <Content Include="fonts\GLVenuri-Light.woff" />
+    <Content Include="fonts\GLVenuri-Light.woff2" />
+    <Content Include="fonts\GLVenuri-Medium.eot" />
+    <Content Include="fonts\GLVenuri-Medium.ttf" />
+    <Content Include="fonts\GLVenuri-Medium.woff" />
+    <Content Include="fonts\GLVenuri-Medium.woff2" />
+    <Content Include="fonts\GLVenuri-Regular.eot" />
+    <Content Include="fonts\GLVenuri-Regular.ttf" />
+    <Content Include="fonts\GLVenuri-Regular.woff" />
+    <Content Include="fonts\GLVenuri-Regular.woff2" />
+    <Content Include="fonts\GLVenuri-Thin.eot" />
+    <Content Include="fonts\GLVenuri-Thin.ttf" />
+    <Content Include="fonts\GLVenuri-Thin.woff" />
+    <Content Include="fonts\GLVenuri-Thin.woff2" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\tether.js" />
+    <Content Include="Scripts\tether.min.js" />
+    <Content Include="Styles\cs-select.css" />
+    <Content Include="Styles\cs-skin-elastic.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CreateDateRange.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Designer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Engineer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Font.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FontType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Font_Design.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Font_Engineer.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Font_Mentor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Font_Writing.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Mentor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MultiplePV.cs" />
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Writing.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Views\Shared\_Engineers.cshtml" />
+    <Content Include="Views\Shared\_Mentors.cshtml" />
+    <Content Include="Views\Shared\_Fonts.cshtml" />
+    <Content Include="Views\Home\select.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49699</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49699/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

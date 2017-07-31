@@ -1,0 +1,20 @@
+﻿@model IEnumerable<FontsGeolabEduGe.Models.Engineer>
+
+
+<div id="designer-list">
+    @foreach (var item in Model)
+    {
+        <div class="designer col-lg-3 col-md-4 col-sm-6 col-6" style="float:left;">
+            <div class="designer-img" style="background-image:url('../../Images/EngineerImages/@item.EngineerPhoto.@item.Ext')"></div>
+            <div class="designer-id">
+                <p class="name">@item.EngineerName</p>
+                <p class="prof">დიზაინერი</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    }
+    <div class="clear"></div>
+
+
+</div>
+

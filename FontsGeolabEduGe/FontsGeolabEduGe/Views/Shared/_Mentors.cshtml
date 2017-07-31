@@ -1,0 +1,17 @@
+﻿@model IEnumerable<FontsGeolabEduGe.Models.Mentor>
+
+
+<div id="mentor-list">
+    @foreach (var item in Model)
+    {
+        <div class="mentor col-6 col-sm-4 col-md-3 collg">
+            <div class="mentor-img" style="background-image:url('../../Images/MentorImages/@item.MentorPhoto.@item.Ext')"></div>
+            <div class="mentor-id">
+                <p class="name">@item.MentorName</p>
+                <p class="prof">დიზაინერი</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    }
+</div>
+
