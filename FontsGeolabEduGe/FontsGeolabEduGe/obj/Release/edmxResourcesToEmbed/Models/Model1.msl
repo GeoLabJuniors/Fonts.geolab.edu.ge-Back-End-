@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FontsModelStoreContainer" CdmEntityContainer="FontsEntities">
+    <EntitySetMapping Name="CreateDateRanges">
+      <EntityTypeMapping TypeName="FontsModel.CreateDateRange">
+        <MappingFragment StoreEntitySet="CreateDateRange">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CreateDateRange1" ColumnName="CreateDateRange" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Designers">
+      <EntityTypeMapping TypeName="FontsModel.Designer">
+        <MappingFragment StoreEntitySet="Designer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DesignerName" ColumnName="DesignerName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Engineers">
+      <EntityTypeMapping TypeName="FontsModel.Engineer">
+        <MappingFragment StoreEntitySet="Engineer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EngineerName" ColumnName="EngineerName" />
+          <ScalarProperty Name="EngineerPhoto" ColumnName="EngineerPhoto" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fonts">
+      <EntityTypeMapping TypeName="FontsModel.Font">
+        <MappingFragment StoreEntitySet="Font">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FontNamePre" ColumnName="FontNamePre" />
+          <ScalarProperty Name="FontName" ColumnName="FontName" />
+          <ScalarProperty Name="FontTypeID" ColumnName="FontTypeID" />
+          <ScalarProperty Name="CreateDateRangeID" ColumnName="CreateDateRangeID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="DigitizationDate" ColumnName="DigitizationDate" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Font_Design">
+      <EntityTypeMapping TypeName="FontsModel.Font_Design">
+        <MappingFragment StoreEntitySet="Font_Design">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FontID" ColumnName="FontID" />
+          <ScalarProperty Name="DesignerID" ColumnName="DesignerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Font_Engineer">
+      <EntityTypeMapping TypeName="FontsModel.Font_Engineer">
+        <MappingFragment StoreEntitySet="Font_Engineer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FontID" ColumnName="FontID" />
+          <ScalarProperty Name="EngineerID" ColumnName="EngineerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Font_Mentor">
+      <EntityTypeMapping TypeName="FontsModel.Font_Mentor">
+        <MappingFragment StoreEntitySet="Font_Mentor">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FontID" ColumnName="FontID" />
+          <ScalarProperty Name="MentorID" ColumnName="MentorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Font_Writing">
+      <EntityTypeMapping TypeName="FontsModel.Font_Writing">
+        <MappingFragment StoreEntitySet="Font_Writing">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FontID" ColumnName="FontID" />
+          <ScalarProperty Name="WritingID" ColumnName="WritingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FontTypes">
+      <EntityTypeMapping TypeName="FontsModel.FontType">
+        <MappingFragment StoreEntitySet="FontType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FontType1" ColumnName="FontType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mentors">
+      <EntityTypeMapping TypeName="FontsModel.Mentor">
+        <MappingFragment StoreEntitySet="Mentor">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MentorName" ColumnName="MentorName" />
+          <ScalarProperty Name="MentorPhoto" ColumnName="MentorPhoto" />
+          <ScalarProperty Name="Ext" ColumnName="Ext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="FontsModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Writings">
+      <EntityTypeMapping TypeName="FontsModel.Writing">
+        <MappingFragment StoreEntitySet="Writing">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Writing1" ColumnName="Writing" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

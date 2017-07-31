@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Anano-PC\Desktop\Fonts publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>07/10/2017 00:26:08</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>07/10/2017 00:26:08</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/03/2015 17:43:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/03/2015 17:43:42</publishTime>
+    </File>
+    <File Include="bin/FontsGeolabEduGe.dll">
+      <publishTime>07/31/2017 19:40:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/30/2016 16:07:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 11:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/06/2016 15:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 11:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/06/2016 15:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/23/2012 15:23:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css.map">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css.map">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css.map">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css.map">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>07/10/2017 00:35:55</publishTime>
+    </File>
+    <File Include="Content/tether/tether-theme-arrows-dark.css">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="Content/tether/tether-theme-arrows-dark.min.css">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="Content/tether/tether-theme-arrows.css">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="Content/tether/tether-theme-arrows.min.css">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="Content/tether/tether-theme-basic.css">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="Content/tether/tether-theme-basic.min.css">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="Content/tether/tether.css">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="Content/tether/tether.min.css">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="fonts/BPGNinoMtavruli-Bold.svg">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/BPGNinoMtavruli-Bold.ttf">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/BPGNinoMtavruli-Bold.woff">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/BPGNinoMtavruli.svg">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/BPGNinoMtavruli.ttf">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/BPGNinoMtavruli.woff">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/bpg_nino_mtavruli_bold.eot">
+      <publishTime>07/24/2017 11:24:03</publishTime>
+    </File>
+    <File Include="fonts/bpg_nino_mtavruli_bold.woff2">
+      <publishTime>07/24/2017 11:24:04</publishTime>
+    </File>
+    <File Include="fonts/bpg_nino_mtavruli_normal.eot">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/bpg_nino_mtavruli_normal.woff2">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/codropsicons/codropsicons.eot">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="fonts/codropsicons/codropsicons.svg">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="fonts/codropsicons/codropsicons.ttf">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="fonts/codropsicons/codropsicons.woff">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="fonts/codropsicons/license.txt">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="fonts/dejavu-sans-bold.eot">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/dejavu-sans-bold.woff2">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/DejaVuSans-Bold.svg">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/DejaVuSans-Bold.ttf">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/DejaVuSans-Bold.woff">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/DejaVuSans.eot">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/DejaVuSans.svg">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/DejaVuSans.ttf">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/DejaVuSans.woff">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/DejaVuSans.woff2">
+      <publishTime>07/24/2017 11:24:07</publishTime>
+    </File>
+    <File Include="fonts/font.css">
+      <publishTime>07/24/2017 11:24:34</publishTime>
+    </File>
+    <File Include="fonts/GLAkademiuri-Regular.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLAkademiuri-Regular.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLAkademiuri-Regular.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLAkademiuri-Regular.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLAkademiuri-Regular.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Book.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Book.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Book.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Book.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Book.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Light.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Light.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Light.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Light.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Light.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Regular.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Regular.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Regular.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Regular.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLChonchkhi-Regular.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLEreklesStamba-Regular.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLEreklesStamba-Regular.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLEreklesStamba-Regular.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLEreklesStamba-Regular.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLEreklesStamba-Regular.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGiorgiNikoladze-Regular.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGiorgiNikoladze-Regular.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGiorgiNikoladze-Regular.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGiorgiNikoladze-Regular.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGiorgiNikoladze-Regular.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Bold.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Bold.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Bold.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Bold.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Bold.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Light.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Light.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Light.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Light.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Light.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Medium.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Medium.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Medium.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Medium.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Medium.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Regular.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Regular.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Regular.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Regular.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-Regular.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-UltraLight.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-UltraLight.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-UltraLight.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-UltraLight.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLGordeziani-UltraLight.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLItaliuri-Regular.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLItaliuri-Regular.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLItaliuri-Regular.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLItaliuri-Regular.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLItaliuri-Regular.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKirovi-Bold.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKirovi-Bold.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKirovi-Bold.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKirovi-Bold.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKirovi-Bold.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Bold.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Bold.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Bold.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Bold.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Bold.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Light.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Light.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Light.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Light.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Light.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Medium.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Medium.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Medium.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Medium.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Medium.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Regular.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Regular.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Regular.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Regular.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-Regular.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-UltraLight.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-UltraLight.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-UltraLight.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-UltraLight.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLKupiura-UltraLight.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Bold.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Bold.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Bold.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Bold.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Bold.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Regular.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Regular.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Regular.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Regular.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLLortkipanidze-Regular.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Book.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Book.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Book.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Book.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Book.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-ExtraLight.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-ExtraLight.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-ExtraLight.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-ExtraLight.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-ExtraLight.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Light.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Light.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Light.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Light.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Light.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Regular.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Regular.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Regular.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Regular.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Regular.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Thin.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Thin.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Thin.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Thin.woff">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-Thin.woff2">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-UltraLight.eot">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-UltraLight.svg">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-UltraLight.ttf">
+      <publishTime>07/24/2017 11:24:08</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-UltraLight.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLMkafio-UltraLight.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLMoskovis-Regular.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLMoskovis-Regular.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLMoskovis-Regular.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLMoskovis-Regular.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLMoskovis-Regular.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Bold.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Bold.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Bold.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Bold.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Bold.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Medium.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Medium.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Medium.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Medium.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Medium.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Regular.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Regular.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Regular.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Regular.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLParizuli-Regular.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSaeklesio-Regular.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSaeklesio-Regular.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSaeklesio-Regular.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSaeklesio-Regular.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSaeklesio-Regular.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSatitulo-Regular.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSatitulo-Regular.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSatitulo-Regular.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSatitulo-Regular.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLSatitulo-Regular.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishvili12-Normal.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishvili12-Normal.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishvili12-Normal.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishvili12-Normal.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishvili12-Normal.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishviliMetal-Bold.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishviliMetal-Bold.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishviliMetal-Bold.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishviliMetal-Bold.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLTatishviliMetal-Bold.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLUniversiteti-Regular.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLUniversiteti-Regular.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLUniversiteti-Regular.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLUniversiteti-Regular.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLUniversiteti-Regular.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Bold.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Bold.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Bold.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Bold.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Bold.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Book.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Book.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Book.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Book.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Book.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-ExtraLight.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-ExtraLight.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-ExtraLight.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-ExtraLight.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-ExtraLight.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Heavy.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Heavy.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Heavy.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Heavy.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Heavy.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Light.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Light.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Light.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Light.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Light.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Medium.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Medium.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Medium.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Medium.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Medium.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Regular.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Regular.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Regular.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Regular.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Regular.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Thin.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Thin.svg">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Thin.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Thin.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/GLVenuri-Thin.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/icomoon/icomoon.eot">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="fonts/icomoon/icomoon.svg">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="fonts/icomoon/icomoon.ttf">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="fonts/icomoon/icomoon.woff">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="fonts/NotoSans.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSans.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSans.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSans.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansGeorgian-Bold.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansGeorgian-Bold.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansGeorgian-Bold.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansGeorgian-Bold.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansGeorgian-Regular.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansGeorgian-Regular.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansGeorgian-Regular.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansGeorgian-Regular.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansUI-Bold.eot">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansUI-Bold.ttf">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansUI-Bold.woff">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="fonts/NotoSansUI-Bold.woff2">
+      <publishTime>07/24/2017 11:24:09</publishTime>
+    </File>
+    <File Include="font_download/Akademiuri.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Dumbadze.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/EreklesStamba.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/GiorgiNikoladze.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Gordeziani.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Italiuri.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Kirovi.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Kupiura.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Lortkipanidze.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Mkafio.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Moskovis.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Parizuli.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Saeklesio.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Satitulo.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Tatishvili_12.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Tatishvili_Chonchkhi.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Tatishvili_Metal.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Universiteti.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="font_download/Venuri.rar">
+      <publishTime>07/13/2017 23:38:16</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/10/2017 00:26:01</publishTime>
+    </File>
+    <File Include="Images/dots.png">
+      <publishTime>06/02/2017 19:28:01</publishTime>
+    </File>
+    <File Include="Images/download-grey.png">
+      <publishTime>05/18/2017 13:15:14</publishTime>
+    </File>
+    <File Include="Images/download-white.png">
+      <publishTime>05/18/2017 13:14:15</publishTime>
+    </File>
+    <File Include="Images/EngineerImages/A_Charkviani.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Images/letter-min.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Images/letter.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Images/logo-ico.ico">
+      <publishTime>07/31/2017 19:05:19</publishTime>
+    </File>
+    <File Include="Images/logo-png.png">
+      <publishTime>07/31/2017 19:05:19</publishTime>
+    </File>
+    <File Include="Images/logo-svg.svg">
+      <publishTime>05/17/2017 19:41:29</publishTime>
+    </File>
+    <File Include="Images/MentorImages/A_Razmadze.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Images/MentorImages/A_Sukiasovi.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Images/MentorImages/B_Gugushvili.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Images/MentorImages/L_Giorgadze.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Images/MentorImages/M_Getsadze.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Images/type-min.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Images/typewriter.png">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Js/classie.js">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Js/script.js">
+      <publishTime>07/25/2017 17:59:23</publishTime>
+    </File>
+    <File Include="Js/selectFx.js">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Models/Model1.edmx.diagram">
+      <publishTime>07/31/2017 18:01:13</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/10/2017 11:52:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/10/2017 01:11:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>07/10/2017 01:19:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>07/10/2017 01:19:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>07/10/2017 01:19:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>07/10/2017 01:19:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>07/10/2017 01:19:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>07/10/2017 01:19:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>07/10/2017 11:52:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>07/10/2017 11:52:14</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>07/10/2017 00:35:58</publishTime>
+    </File>
+    <File Include="Scripts/tether.js">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="Scripts/tether.min.js">
+      <publishTime>07/10/2017 01:21:24</publishTime>
+    </File>
+    <File Include="Styles/cs-select.css">
+      <publishTime>05/11/2017 21:26:54</publishTime>
+    </File>
+    <File Include="Styles/cs-skin-elastic.css">
+      <publishTime>05/21/2017 16:10:45</publishTime>
+    </File>
+    <File Include="Styles/style.css">
+      <publishTime>07/31/2017 18:40:35</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/31/2017 18:32:17</publishTime>
+    </File>
+    <File Include="Views/Home/select.cshtml">
+      <publishTime>07/13/2017 21:38:04</publishTime>
+    </File>
+    <File Include="Views/Shared/_Engineers.cshtml">
+      <publishTime>07/10/2017 17:01:29</publishTime>
+    </File>
+    <File Include="Views/Shared/_Fonts.cshtml">
+      <publishTime>07/24/2017 13:20:23</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/31/2017 18:17:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_Mentors.cshtml">
+      <publishTime>07/10/2017 17:07:31</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>07/10/2017 00:26:01</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/10/2017 00:35:54</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/31/2017 20:06:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

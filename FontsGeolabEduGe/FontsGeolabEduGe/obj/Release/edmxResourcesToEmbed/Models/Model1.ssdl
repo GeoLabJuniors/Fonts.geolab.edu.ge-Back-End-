@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FontsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CreateDateRange">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CreateDateRange" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Designer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DesignerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Engineer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EngineerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EngineerPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ext" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Font">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FontNamePre" Type="nvarchar" MaxLength="50" />
+    <Property Name="FontName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FontTypeID" Type="int" Nullable="false" />
+    <Property Name="CreateDateRangeID" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="DigitizationDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ext" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Font_Design">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FontID" Type="int" Nullable="false" />
+    <Property Name="DesignerID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Font_Engineer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FontID" Type="int" Nullable="false" />
+    <Property Name="EngineerID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Font_Mentor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FontID" Type="int" Nullable="false" />
+    <Property Name="MentorID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Font_Writing">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FontID" Type="int" Nullable="false" />
+    <Property Name="WritingID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FontType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FontType" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Mentor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MentorName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MentorPhoto" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ext" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Writing">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Writing" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Font_CreateDateRange">
+    <End Role="CreateDateRange" Type="Self.CreateDateRange" Multiplicity="1" />
+    <End Role="Font" Type="Self.Font" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CreateDateRange">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font">
+        <PropertyRef Name="CreateDateRangeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Design_Designer">
+    <End Role="Designer" Type="Self.Designer" Multiplicity="1" />
+    <End Role="Font_Design" Type="Self.Font_Design" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Design">
+        <PropertyRef Name="DesignerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Design_Font">
+    <End Role="Font" Type="Self.Font" Multiplicity="1" />
+    <End Role="Font_Design" Type="Self.Font_Design" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Font">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Design">
+        <PropertyRef Name="FontID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Engineer_Engineer">
+    <End Role="Engineer" Type="Self.Engineer" Multiplicity="1" />
+    <End Role="Font_Engineer" Type="Self.Font_Engineer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Engineer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Engineer">
+        <PropertyRef Name="EngineerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Engineer_Font">
+    <End Role="Font" Type="Self.Font" Multiplicity="1" />
+    <End Role="Font_Engineer" Type="Self.Font_Engineer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Font">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Engineer">
+        <PropertyRef Name="FontID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_FontType">
+    <End Role="FontType" Type="Self.FontType" Multiplicity="1" />
+    <End Role="Font" Type="Self.Font" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FontType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font">
+        <PropertyRef Name="FontTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Mentor_Font">
+    <End Role="Font" Type="Self.Font" Multiplicity="1" />
+    <End Role="Font_Mentor" Type="Self.Font_Mentor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Font">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Mentor">
+        <PropertyRef Name="FontID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Mentor_Mentor">
+    <End Role="Mentor" Type="Self.Mentor" Multiplicity="1" />
+    <End Role="Font_Mentor" Type="Self.Font_Mentor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mentor">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Mentor">
+        <PropertyRef Name="MentorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Writing_Font">
+    <End Role="Font" Type="Self.Font" Multiplicity="1" />
+    <End Role="Font_Writing" Type="Self.Font_Writing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Font">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Writing">
+        <PropertyRef Name="FontID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Font_Writing_Writing">
+    <End Role="Writing" Type="Self.Writing" Multiplicity="1" />
+    <End Role="Font_Writing" Type="Self.Font_Writing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Writing">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Font_Writing">
+        <PropertyRef Name="WritingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FontsModelStoreContainer">
+    <EntitySet Name="CreateDateRange" EntityType="Self.CreateDateRange" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Designer" EntityType="Self.Designer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Engineer" EntityType="Self.Engineer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Font" EntityType="Self.Font" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Font_Design" EntityType="Self.Font_Design" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Font_Engineer" EntityType="Self.Font_Engineer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Font_Mentor" EntityType="Self.Font_Mentor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Font_Writing" EntityType="Self.Font_Writing" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FontType" EntityType="Self.FontType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mentor" EntityType="Self.Mentor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Writing" EntityType="Self.Writing" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Font_CreateDateRange" Association="Self.FK_Font_CreateDateRange">
+      <End Role="CreateDateRange" EntitySet="CreateDateRange" />
+      <End Role="Font" EntitySet="Font" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Design_Designer" Association="Self.FK_Font_Design_Designer">
+      <End Role="Designer" EntitySet="Designer" />
+      <End Role="Font_Design" EntitySet="Font_Design" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Design_Font" Association="Self.FK_Font_Design_Font">
+      <End Role="Font" EntitySet="Font" />
+      <End Role="Font_Design" EntitySet="Font_Design" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Engineer_Engineer" Association="Self.FK_Font_Engineer_Engineer">
+      <End Role="Engineer" EntitySet="Engineer" />
+      <End Role="Font_Engineer" EntitySet="Font_Engineer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Engineer_Font" Association="Self.FK_Font_Engineer_Font">
+      <End Role="Font" EntitySet="Font" />
+      <End Role="Font_Engineer" EntitySet="Font_Engineer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_FontType" Association="Self.FK_Font_FontType">
+      <End Role="FontType" EntitySet="FontType" />
+      <End Role="Font" EntitySet="Font" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Mentor_Font" Association="Self.FK_Font_Mentor_Font">
+      <End Role="Font" EntitySet="Font" />
+      <End Role="Font_Mentor" EntitySet="Font_Mentor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Mentor_Mentor" Association="Self.FK_Font_Mentor_Mentor">
+      <End Role="Mentor" EntitySet="Mentor" />
+      <End Role="Font_Mentor" EntitySet="Font_Mentor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Writing_Font" Association="Self.FK_Font_Writing_Font">
+      <End Role="Font" EntitySet="Font" />
+      <End Role="Font_Writing" EntitySet="Font_Writing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Font_Writing_Writing" Association="Self.FK_Font_Writing_Writing">
+      <End Role="Writing" EntitySet="Writing" />
+      <End Role="Font_Writing" EntitySet="Font_Writing" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
