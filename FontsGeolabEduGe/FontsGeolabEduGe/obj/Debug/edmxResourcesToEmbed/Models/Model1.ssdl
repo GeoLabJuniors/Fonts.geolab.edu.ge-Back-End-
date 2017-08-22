@@ -35,6 +35,7 @@
     <Property Name="CreateDate" Type="nvarchar" MaxLength="50" />
     <Property Name="DigitizationDate" Type="nvarchar" MaxLength="50" />
     <Property Name="Ext" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="hasOneWidth" Type="bit" />
   </EntityType>
   <EntityType Name="Font_Design">
     <Key>

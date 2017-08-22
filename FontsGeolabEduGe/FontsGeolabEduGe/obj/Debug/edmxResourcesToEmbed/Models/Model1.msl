@@ -30,6 +30,7 @@
     <EntitySetMapping Name="Fonts">
       <EntityTypeMapping TypeName="FontsModel.Font">
         <MappingFragment StoreEntitySet="Font">
+          <ScalarProperty Name="hasOneWidth" ColumnName="hasOneWidth" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="FontNamePre" ColumnName="FontNamePre" />
           <ScalarProperty Name="FontName" ColumnName="FontName" />

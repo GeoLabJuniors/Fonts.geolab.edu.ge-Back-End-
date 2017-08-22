@@ -194,6 +194,8 @@
     <Content Include="fonts\GLVenuri-Regular.svg" />
     <Content Include="fonts\GLVenuri-Thin.svg" />
     <Content Include="fonts\icomoon\icomoon.svg" />
+    <Content Include="fonts\NotoSansGeorgian-Bold.svg" />
+    <Content Include="fonts\NotoSansGeorgian.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\dots.png" />
     <Content Include="Images\download-grey.png" />
@@ -468,6 +470,10 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="fonts\NotoSansGeorgian.eot" />
+    <Content Include="fonts\NotoSansGeorgian.ttf" />
+    <Content Include="fonts\NotoSansGeorgian.woff" />
+    <Content Include="fonts\NotoSansGeorgian.woff2" />
     <None Include="Properties\PublishProfiles\anano.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />

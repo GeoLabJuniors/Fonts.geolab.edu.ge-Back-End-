@@ -27,9 +27,9 @@ namespace FontsGeolabEduGe.Controllers
             ViewBag.selectedWriting = 0;
 
             var model = new MultiplePV();
-            model.Engineers = _db.Engineers.Take(16).ToList();
+            //model.Engineers = _db.Engineers.Take(16).ToList();
             model.Mentors = _db.Mentors.Take(5).ToList();
-            model.Fonts = _db.Fonts.Take(6).ToList();
+            model.Fonts = _db.Fonts.ToList();
             return View(model);
         }
 
@@ -54,11 +54,11 @@ namespace FontsGeolabEduGe.Controllers
             return PartialView("_Fonts", response);
         }
 
-        public PartialViewResult EngineersAll()
-        {
-            var engineer = _db.Engineers.ToList();
-            return PartialView("_Engineers", engineer);
-        }
+        //public PartialViewResult EngineersAll()
+        //{
+        //    var engineer = _db.Engineers.ToList();
+        //    return PartialView("_Engineers", engineer);
+        //}
 
         public PartialViewResult MentorsAll()
         {
@@ -66,11 +66,11 @@ namespace FontsGeolabEduGe.Controllers
             return PartialView("_Mentors", mentor);
         }
 
-        public PartialViewResult FontsAll()
-        {
-            var font = _db.Fonts.ToList();
-            return PartialView("_Fonts", font);
-        }
+        //public PartialViewResult FontsAll()
+        //{
+        //    var font = _db.Fonts.ToList();
+        //    return PartialView("_Fonts", font);
+        //}
 
         
     }
