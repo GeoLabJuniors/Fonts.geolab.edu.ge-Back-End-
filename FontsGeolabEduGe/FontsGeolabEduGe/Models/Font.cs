@@ -31,6 +31,7 @@ namespace FontsGeolabEduGe.Models
         public string CreateDate { get; set; }
         public string DigitizationDate { get; set; }
         public string Ext { get; set; }
+        public Nullable<bool> hasOneWidth { get; set; }
     
         public virtual CreateDateRange CreateDateRange { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
