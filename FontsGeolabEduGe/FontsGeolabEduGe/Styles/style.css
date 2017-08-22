@@ -465,6 +465,11 @@ tr {
     padding: 25px 0;
 }
 
+#footer a{
+    color: #7E7A7A;
+    text-decoration: none;
+}
+
 .sub-show {
     display: none;
 }
