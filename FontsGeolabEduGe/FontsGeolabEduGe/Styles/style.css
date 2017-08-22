@@ -94,7 +94,7 @@ li.nav-item {
 
 .display-3 {
     font-family: "Noto Sans Georgian";
-    font-size: 48px;
+    font-size: 40px;
     color: #7e7a7a;
     max-width: 775px;
 }
@@ -558,7 +558,7 @@ tr {
     .display-3 {
         max-width: 100%;
         padding-right: 29%;
-        font-size: 40px;
+        font-size: 38px;
     }
 
     #designers .designer, #mentors .mentor {
