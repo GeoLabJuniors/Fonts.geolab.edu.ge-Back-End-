@@ -93,7 +93,7 @@ li.nav-item {
 }
 
 .display-3 {
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
     font-size: 48px;
     color: #7e7a7a;
     max-width: 775px;
@@ -119,12 +119,12 @@ li.nav-item {
     text-align: center;
     color: #7e7a7a;
     font-size: 18.86px;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
 }
 
 #history-text {
     padding-top: 50px;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
     font-size: 16.5px;
     color: #3b3b3b;
 }
@@ -155,7 +155,7 @@ li.nav-item {
 #fonts-menu {
     padding-top: 50px;
     padding-bottom: 30px;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
     font-size: 18.86px;
     color: #7e7a7a;
 }
@@ -204,7 +204,7 @@ li.nav-item {
     /* margin-top: 20px; */
     width: 190px;
     height: 180px;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
     font-size: 12px;
     float: left;
     z-index: 2;
@@ -362,13 +362,13 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .name {
-    font-family: 'Noto Sans UI', 'Noto Sans UI';
+    font-family: 'Noto Sans Georgian';
     font-weight: bold;
     font-size: 13px;
 }
 
 .prof {
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
 }
 
 #mentors {
@@ -429,7 +429,7 @@ input[type='range']::-webkit-slider-thumb {
 #contact-div {
     background-color: #DEDEDE;
     padding: 80px 0 126px 0;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
 }
 
 #contact-info {
@@ -450,12 +450,12 @@ tr {
 }
 
 .bold {
-    font-family: 'Noto Sans UI', 'Noto Sans UI';
+    font-family: 'Noto Sans Georgian';
     font-weight: bold;
 }
 
 #footer {
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
     font-size: 18px;
     line-height: 1;
     text-align: center;
