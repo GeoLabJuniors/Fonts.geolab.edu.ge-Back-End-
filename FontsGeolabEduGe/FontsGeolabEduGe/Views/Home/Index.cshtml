@@ -122,6 +122,12 @@
                                 date = "(" + item.CreateDate + ")";
                             }
 
+                            var color = "";
+                            if(item.hasOneWidth == true)
+                            {
+                                color = "oneWeight";
+                            }
+
 
                             var fontId = item.ID;
                             var engineerId = item.Font_Engineer.Where(x => x.FontID == fontId).FirstOrDefault().EngineerID;
@@ -141,7 +147,7 @@
                                         </div>
                                         <div class="font-weight-div">
                                             <p>შტრიხის სისქე</p>
-                                            <input class="weight" type="range" min="100" max="900" step="100" value="200" data-orientation="vertical" data-toggle="tooltip" title="200">
+                                            <input class="weight @color" type="range" min="100" max="900" step="100" value="200" data-orientation="vertical" data-toggle="tooltip" title="200">
                                         </div>
                                         <div class="font-size-div">
                                             <p>ზომის შეცვლა</p>

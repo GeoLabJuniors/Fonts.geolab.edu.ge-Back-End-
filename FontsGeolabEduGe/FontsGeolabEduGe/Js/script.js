@@ -141,6 +141,12 @@ function filter() {
     $("#search").click();
 }
 
+$(".oneWeight").siblings(".slider").children(".slider-track").addClass("grey");
+$(".oneWeight").siblings(".slider").children(".slider-handle").addClass("grey");
+
+
+    
+
 
 
 
