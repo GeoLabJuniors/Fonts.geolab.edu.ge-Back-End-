@@ -76,16 +76,17 @@
                 <div class="subtitle"><p>გადმოსაწერად <span class="sub-hide">დააჭირეთ მარჯვენა მხარეს მოთავსებულ ღილაკს</span><span class="sub-show">ესტუმრეთ დესკტოპ ვერსიას</span></p></div>
                 <div id="fonts-menu" class="hidden-md-down">
                     <form action="FontsFilter" method="get" class="form-inline">
-                        <label class="custom-control custom-radio">
-                            @Html.RadioButton("type", "სერიფ შრიფტები", new { @id = "serif", @class = "custom-control-input" })
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">სერიფ შრიფტები</span>
+                        <label class="control control--checkbox">
+                            სერიფ შრიფტები
+                            @Html.CheckBox("type",  new { @id = "serif", @class = "custom-control-input" })
+                            <div class="control__indicator"></div>
                         </label>
-                        <label class="custom-control custom-radio">
-                            @Html.RadioButton("type", "სანს-სერიფ შრიფტები", new { @id = "sans", @class = "custom-control-input" })    
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">სანს-სერიფ შრიფტები</span>
+                        <label class="control control--checkbox">
+                            სანს სერიფ შრიფტები
+                            @Html.CheckBox("type", new { @id = "sans", @class = "custom-control-input" })
+                            <div class="control__indicator"></div>
                         </label>
+
                         <section class="filter" style="min-width:30.83%;">
                             @Html.DropDownList("writing", new SelectList(ViewBag.writing, "ID", "writing1", ViewBag.selectedWriting), new { @class = "cs-select cs-skin-elastic" })
                         </section>

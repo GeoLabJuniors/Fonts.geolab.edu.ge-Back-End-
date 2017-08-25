@@ -487,6 +487,7 @@
     <Content Include="Scripts\tether.min.js" />
     <Content Include="Styles\cs-select.css" />
     <Content Include="Styles\cs-skin-elastic.css" />
+    <Content Include="Styles\custom_checkbox.css" />
     <Content Include="Styles\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
