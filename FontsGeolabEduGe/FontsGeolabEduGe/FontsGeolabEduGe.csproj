@@ -206,6 +206,7 @@
     <Content Include="Images\logo-ico.ico" />
     <Content Include="Images\logo-png.png" />
     <Content Include="Images\logo-svg.svg" />
+    <Content Include="Images\logoOgTag.jpg" />
     <Content Include="Images\MentorImages\A_Razmadze.png" />
     <Content Include="Images\MentorImages\A_Sukiasovi.png" />
     <Content Include="Images\MentorImages\B_Gugushvili.png" />
