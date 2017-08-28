@@ -130,9 +130,12 @@ $(".custom-control-input").on("change", function () {
 });
 function filter() {
     var type = 0;
-    if (document.getElementById('sans').checked) {
+    if ($("#sans").is(':checked') && $("#serif").is(':checked')) {
+        type = 0
+    }
+    else if ($("#sans").is(':checked')) {
         type = 2;
-    } else if (document.getElementById('serif').checked) {
+    } else if ($("#sans").is(':checked')) {
         type = 1;
     }
     var range = $("#createDateRange").val();
@@ -140,6 +143,12 @@ function filter() {
     $("#search").attr("href", "/Home/Filter?createDateRange=" + range +"&writing="+writing+ "&type=" + type);
     $("#search").click();
 }
+
+$(".oneWeight").siblings(".slider").children(".slider-track").addClass("grey");
+$(".oneWeight").siblings(".slider").children(".slider-handle").addClass("grey");
+
+
+    
 
 
 

@@ -9,6 +9,12 @@
             date = "(" + item.CreateDate + ")";
         }
 
+        var color = "";
+        if (item.hasOneWidth == true)
+        {
+            color = "oneWeight";
+        }
+
         var fontId = item.ID;
         var engineerId = item.Font_Engineer.Where(x => x.FontID == fontId).FirstOrDefault().EngineerID;
         var engineer = item.Font_Engineer.Where(x => x.Engineer.ID == engineerId).FirstOrDefault().Engineer.EngineerName;
@@ -21,14 +27,14 @@
                 <div class="font-opts col-md-2 hidden-md-down">
                     <div class="font-name">
                         <svg width="300" height="200">
-                            <polygon points="0,0 160,0 180,15 160,30 0,30"
+                            <polygon points="20,0 170,0 170,30 20,30"
                                      style="fill:#633085;fill-rule:evenodd;" />
-                            <text fill="#ffffff" font-size="12" font-family="DejaVuSans" x="30" y="19">@item.FontNamePre @item.FontName</text>
+                            <text fill="#ffffff" font-size="12" x="30" y="19" font-family="DejaVuSans">@item.FontNamePre @item.FontName</text>
                         </svg>
                     </div>
                     <div class="font-weight-div">
                         <p>შტრიხის სისქე</p>
-                        <input class="weight" type="range" min="100" max="900" step="100" value="200" data-orientation="vertical" data-toggle="tooltip" title="200">
+                        <input class="weight @color" type="range" min="100" max="900" step="100" value="200" data-orientation="vertical" data-toggle="tooltip" title="200">
                     </div>
                     <div class="font-size-div">
                         <p>ზომის შეცვლა</p>
@@ -189,9 +195,12 @@
     });
     function filter() {
         var type = 0;
-        if (document.getElementById('sans').checked) {
+        if ($("#sans").is(':checked') && $("#serif").is(':checked')) {
+            type = 0
+        }
+        else if ($("#sans").is(':checked')) {
             type = 2;
-        } else if (document.getElementById('serif').checked) {
+        } else if ($("#serif").is(':checked')) {
             type = 1;
         }
         var range = $("#createDateRange").val();
@@ -199,5 +208,13 @@
         $("#search").attr("href", "/Home/Filter?createDateRange=" + range + "&writing=" + writing + "&type=" + type);
         $("#search").click();
     }
+
+
+
+    $(".oneWeight").siblings(".slider").children(".slider-track").addClass("grey");
+    $(".oneWeight").siblings(".slider").children(".slider-handle").addClass("grey");
+
+
 </script>
+
 

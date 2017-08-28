@@ -76,16 +76,17 @@
                 <div class="subtitle"><p>გადმოსაწერად <span class="sub-hide">დააჭირეთ მარჯვენა მხარეს მოთავსებულ ღილაკს</span><span class="sub-show">ესტუმრეთ დესკტოპ ვერსიას</span></p></div>
                 <div id="fonts-menu" class="hidden-md-down">
                     <form action="FontsFilter" method="get" class="form-inline">
-                        <label class="custom-control custom-radio">
-                            @Html.RadioButton("type", "სერიფ შრიფტები", new { @id = "serif", @class = "custom-control-input" })
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">სერიფ შრიფტები</span>
+                        <label class="control control--checkbox">
+                            სერიფ შრიფტები
+                            @Html.CheckBox("type",  new { @id = "serif", @class = "custom-control-input" })
+                            <div class="control__indicator"></div>
                         </label>
-                        <label class="custom-control custom-radio">
-                            @Html.RadioButton("type", "სანს-სერიფ შრიფტები", new { @id = "sans", @class = "custom-control-input" })    
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">სანს-სერიფ შრიფტები</span>
+                        <label class="control control--checkbox">
+                            სანს სერიფ შრიფტები
+                            @Html.CheckBox("type", new { @id = "sans", @class = "custom-control-input" })
+                            <div class="control__indicator"></div>
                         </label>
+
                         <section class="filter" style="min-width:30.83%;">
                             @Html.DropDownList("writing", new SelectList(ViewBag.writing, "ID", "writing1", ViewBag.selectedWriting), new { @class = "cs-select cs-skin-elastic" })
                         </section>
@@ -122,6 +123,12 @@
                                 date = "(" + item.CreateDate + ")";
                             }
 
+                            var color = "";
+                            if(item.hasOneWidth == true)
+                            {
+                                color = "oneWeight";
+                            }
+
 
                             var fontId = item.ID;
                             var engineerId = item.Font_Engineer.Where(x => x.FontID == fontId).FirstOrDefault().EngineerID;
@@ -134,14 +141,14 @@
                                     <div class="font-opts col-md-2 hidden-md-down">
                                         <div class="font-name">
                                             <svg width="300" height="200">
-                                                <polygon points="0,0 160,0 180,15 160,30 0,30"
+                                                <polygon points="20,0 170,0 170,30 20,30"
                                                          style="fill:#633085;fill-rule:evenodd;" />
                                                 <text fill="#ffffff" font-size="12" x="30" y="19" font-family="DejaVuSans">@item.FontNamePre @item.FontName</text>
                                             </svg>
                                         </div>
                                         <div class="font-weight-div">
                                             <p>შტრიხის სისქე</p>
-                                            <input class="weight" type="range" min="100" max="900" step="100" value="200" data-orientation="vertical" data-toggle="tooltip" title="200">
+                                            <input class="weight @color" type="range" min="100" max="900" step="100" value="200" data-orientation="vertical" data-toggle="tooltip" title="200">
                                         </div>
                                         <div class="font-size-div">
                                             <p>ზომის შეცვლა</p>
@@ -171,7 +178,7 @@
                             </div>
                         }
                         
-                        <button class="btn btn-link show-more">
+                        @*<button class="btn btn-link show-more">
                             @Ajax.ActionLink(" ", "FontsAll", "Home", new AjaxOptions()
                            {
                                HttpMethod = "get",
@@ -181,7 +188,7 @@
                            {
                                @class = "col show-content"
                            })
-                        </button>
+                        </button>*@
 
                     </div>
                 </div>
@@ -191,7 +198,7 @@
     </div>
 
     <div id="authors-div" class="section-div">
-        <div class="container">
+        @*<div class="container">
             <div class="title">დიზაინერები</div>
             <div class="subtitle">და ფონტ-ინჟინრები<span class="sub-hide">, ვინც აღნიშნულ პროექტზე იმუშავეს</span></div>
             <div id="designers">
@@ -225,7 +232,7 @@
                 </button>
             </div>
 
-        </div>
+        </div>*@
         <div class="container">
             <div id="mentors">
                 <div class="title">ხელმძღვანელები</div>
@@ -316,7 +323,7 @@
 
     <div id="footer">
         <div class="container">
-            <p class="no-margin">&copy 2017 ჯეოლაბი</p>
+            <a href="http://geolab.edu.ge/" target="_blank" class="no-margin">&copy 2017 ჯეოლაბი</a>
         </div>
     </div>
 

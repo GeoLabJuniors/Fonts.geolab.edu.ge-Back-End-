@@ -93,10 +93,11 @@ li.nav-item {
 }
 
 .display-3 {
-    font-family: "Noto Sans";
-    font-size: 48px;
+    font-family: "Noto Sans Georgian";
+    font-size: 40px;
     color: #7e7a7a;
     max-width: 775px;
+    line-height: 1.3em;
 }
 
 .display-3 span {
@@ -110,7 +111,7 @@ li.nav-item {
 .title {
     text-align: center;
     color: #7e7a7a;
-    font-size: 48px;
+    font-size: 30px;
     font-family: "BPGNinoMtavruli-Bold", "bpg_nino_mtavruli_bold";
     line-height: 1;
 }
@@ -119,14 +120,18 @@ li.nav-item {
     text-align: center;
     color: #7e7a7a;
     font-size: 18.86px;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
 }
 
 #history-text {
     padding-top: 50px;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
     font-size: 16.5px;
     color: #3b3b3b;
+}
+
+#history-text > .text{
+    line-height: 1.7em;
 }
 
 .show-content {
@@ -155,7 +160,7 @@ li.nav-item {
 #fonts-menu {
     padding-top: 50px;
     padding-bottom: 30px;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
     font-size: 18.86px;
     color: #7e7a7a;
 }
@@ -204,7 +209,7 @@ li.nav-item {
     /* margin-top: 20px; */
     width: 190px;
     height: 180px;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
     font-size: 12px;
     float: left;
     z-index: 2;
@@ -243,12 +248,20 @@ input[type="range"] {
     cursor: pointer;
 }
 
+.slider-track.grey{
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0.15, #bbb7b7), color-stop(0.15, #bbb7b7)) !important;
+}
+
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none !important;
     background-color: #2D0143;
     border-radius: 50%;
     height: 15px;
     width: 15px;
+}
+
+.slider-handle.grey{
+    background-color: #bbb7b7 !important;
 }
 
 .slider {
@@ -277,7 +290,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .font-text {
-    padding: 20px 0 0 0;
+    padding: 30px 0 0 0;
     font-size: 4em;
     color: #7e7a7a;
     font-weight: 200;
@@ -362,13 +375,13 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .name {
-    font-family: 'Noto Sans UI', 'Noto Sans UI';
+    font-family: 'Noto Sans Georgian';
     font-weight: bold;
     font-size: 13px;
 }
 
 .prof {
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
 }
 
 #mentors {
@@ -429,7 +442,7 @@ input[type='range']::-webkit-slider-thumb {
 #contact-div {
     background-color: #DEDEDE;
     padding: 80px 0 126px 0;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
 }
 
 #contact-info {
@@ -450,12 +463,12 @@ tr {
 }
 
 .bold {
-    font-family: 'Noto Sans UI', 'Noto Sans UI';
+    font-family: 'Noto Sans Georgian';
     font-weight: bold;
 }
 
 #footer {
-    font-family: "Noto Sans";
+    font-family: "Noto Sans Georgian";
     font-size: 18px;
     line-height: 1;
     text-align: center;
@@ -463,6 +476,11 @@ tr {
     color: #7E7A7A;
     height: 70px;
     padding: 25px 0;
+}
+
+#footer a{
+    color: #7E7A7A;
+    text-decoration: none;
 }
 
 .sub-show {
@@ -553,7 +571,7 @@ tr {
     .display-3 {
         max-width: 100%;
         padding-right: 29%;
-        font-size: 40px;
+        font-size: 38px;
     }
 
     #designers .designer, #mentors .mentor {
