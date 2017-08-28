@@ -34,7 +34,7 @@
                     </div>
                     <div class="font-weight-div">
                         <p>შტრიხის სისქე</p>
-                        <input class="weight" type="range" min="100" max="900" step="100" value="200" data-orientation="vertical" data-toggle="tooltip" title="200">
+                        <input class="weight @color" type="range" min="100" max="900" step="100" value="200" data-orientation="vertical" data-toggle="tooltip" title="200">
                     </div>
                     <div class="font-size-div">
                         <p>ზომის შეცვლა</p>
@@ -208,5 +208,13 @@
         $("#search").attr("href", "/Home/Filter?createDateRange=" + range + "&writing=" + writing + "&type=" + type);
         $("#search").click();
     }
+
+
+
+    $(".oneWeight").siblings(".slider").children(".slider-track").addClass("grey");
+    $(".oneWeight").siblings(".slider").children(".slider-handle").addClass("grey");
+
+
 </script>
+
 

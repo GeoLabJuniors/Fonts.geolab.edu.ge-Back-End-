@@ -249,7 +249,7 @@ input[type="range"] {
 }
 
 .slider-track.grey{
-    background-image: -webkit-gradient( linear, left top, right top, color-stop(0.15, #808080), color-stop(0.15, #808080)) !important;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0.15, #bbb7b7), color-stop(0.15, #bbb7b7)) !important;
 }
 
 input[type='range']::-webkit-slider-thumb {
@@ -261,7 +261,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .slider-handle.grey{
-    background-color: #808080 !important;
+    background-color: #bbb7b7 !important;
 }
 
 .slider {
