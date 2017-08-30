@@ -1147,7 +1147,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/28/2017 17:19:52</publishTime>
     </File>
     <File Include="Styles/style.css">
-      <publishTime>08/28/2017 18:37:22</publishTime>
+      <publishTime>08/30/2017 14:20:23</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>08/28/2017 18:34:40</publishTime>

@@ -519,6 +519,8 @@ tr {
     left:0;
     }
 
+
+
 @media screen and (max-width: 1200px) {
     #jumbotrone-div {
         background-size: 500px;
@@ -539,7 +541,26 @@ tr {
     .collg{
     width:20%;
 }
+
+    .container {
+    width: 900px;
+    max-width: 100%;
 }
+
+}
+
+
+
+@media screen and (min-width: 1200px){
+
+
+    .container {
+    width: 1040px;
+    max-width: 100%;
+}
+
+}
+
 
 @media screen and (max-width: 992px) {
     #header {
@@ -773,15 +794,6 @@ padding-top: 6px;
 
 
 
-
-@media screen and (min-width: 992px) and (max-width: 1010px) {
-
-    .header-padding {
-        padding-left: 20px !important;
-    }
-
-
-}
 
 
 
