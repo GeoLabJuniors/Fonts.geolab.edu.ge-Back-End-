@@ -38,13 +38,13 @@
     <Property Name="CreateDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="DigitizationDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="hasOneWidth" Type="Boolean" />
     <NavigationProperty Name="CreateDateRange" Relationship="Self.FK_Font_CreateDateRange" FromRole="Font" ToRole="CreateDateRange" />
     <NavigationProperty Name="Font_Design" Relationship="Self.FK_Font_Design_Font" FromRole="Font" ToRole="Font_Design" />
     <NavigationProperty Name="Font_Engineer" Relationship="Self.FK_Font_Engineer_Font" FromRole="Font" ToRole="Font_Engineer" />
     <NavigationProperty Name="FontType" Relationship="Self.FK_Font_FontType" FromRole="Font" ToRole="FontType" />
     <NavigationProperty Name="Font_Mentor" Relationship="Self.FK_Font_Mentor_Font" FromRole="Font" ToRole="Font_Mentor" />
     <NavigationProperty Name="Font_Writing" Relationship="Self.FK_Font_Writing_Font" FromRole="Font" ToRole="Font_Writing" />
-    <Property Name="hasOneWidth" Type="Boolean" />
   </EntityType>
   <EntityType Name="Font_Design">
     <Key>

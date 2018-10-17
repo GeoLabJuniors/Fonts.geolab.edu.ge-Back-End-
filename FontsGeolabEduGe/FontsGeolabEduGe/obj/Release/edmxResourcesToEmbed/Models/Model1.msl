@@ -30,7 +30,6 @@
     <EntitySetMapping Name="Fonts">
       <EntityTypeMapping TypeName="FontsModel.Font">
         <MappingFragment StoreEntitySet="Font">
-          <ScalarProperty Name="hasOneWidth" ColumnName="hasOneWidth" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="FontNamePre" ColumnName="FontNamePre" />
           <ScalarProperty Name="FontName" ColumnName="FontName" />
@@ -39,6 +38,7 @@
           <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
           <ScalarProperty Name="DigitizationDate" ColumnName="DigitizationDate" />
           <ScalarProperty Name="Ext" ColumnName="Ext" />
+          <ScalarProperty Name="hasOneWidth" ColumnName="hasOneWidth" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="FontsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="FontsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CreateDateRange">
           <Key>
             <PropertyRef Name="ID" />
@@ -281,7 +281,8 @@
             <End Role="Font_Writing" EntitySet="Font_Writing" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="FontsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -323,13 +324,13 @@
           <Property Name="CreateDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DigitizationDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="hasOneWidth" Type="Boolean" />
           <NavigationProperty Name="CreateDateRange" Relationship="Self.FK_Font_CreateDateRange" FromRole="Font" ToRole="CreateDateRange" />
           <NavigationProperty Name="Font_Design" Relationship="Self.FK_Font_Design_Font" FromRole="Font" ToRole="Font_Design" />
           <NavigationProperty Name="Font_Engineer" Relationship="Self.FK_Font_Engineer_Font" FromRole="Font" ToRole="Font_Engineer" />
           <NavigationProperty Name="FontType" Relationship="Self.FK_Font_FontType" FromRole="Font" ToRole="FontType" />
           <NavigationProperty Name="Font_Mentor" Relationship="Self.FK_Font_Mentor_Font" FromRole="Font" ToRole="Font_Mentor" />
           <NavigationProperty Name="Font_Writing" Relationship="Self.FK_Font_Writing_Font" FromRole="Font" ToRole="Font_Writing" />
-          <Property Name="hasOneWidth" Type="Boolean" />
         </EntityType>
         <EntityType Name="Font_Design">
           <Key>
@@ -616,7 +617,6 @@
           <EntitySetMapping Name="Fonts">
             <EntityTypeMapping TypeName="FontsModel.Font">
               <MappingFragment StoreEntitySet="Font">
-                <ScalarProperty Name="hasOneWidth" ColumnName="hasOneWidth" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="FontNamePre" ColumnName="FontNamePre" />
                 <ScalarProperty Name="FontName" ColumnName="FontName" />
@@ -625,6 +625,7 @@
                 <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
                 <ScalarProperty Name="DigitizationDate" ColumnName="DigitizationDate" />
                 <ScalarProperty Name="Ext" ColumnName="Ext" />
+                <ScalarProperty Name="hasOneWidth" ColumnName="hasOneWidth" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
